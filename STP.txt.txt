@@ -1,0 +1,28 @@
+問１
+→Switch３
+
+Switch1→Switch1-Switch2-Switch4-Switch3 19+100+100=219,Switch1-Switch3 100
+Switch2→Switch2-Switch1-Switch3 19+100=119,Switch2-Switch4-Switch3  100+100=200
+Switch4→Switch4-Switch2-Switch1-Switch3 100+19+100=219,Switch4-Switch3 100
+
+
+
+
+
+
+
+問２
+Switch１　F0/1 DP F0/2 RP
+→F0/1がDPである理由はルートポートの向かいのポートのため
+　F0/2がRPである理由はF0/1よりルートブリッジに近いため
+Switch２　F0/1 RP F0/2 BP
+→F0/1がRPである理由はF0/2よりルートブリッジに近いため
+  F0/2がBPである理由は指定ポートのどちらにも選出されなかったうえSwitch４のE0/1よりブリッジIDが大きいため
+Switch３  E0/1 DP E0/2 DP　
+→ルートブリッジであるため両方ともDP
+Switch４  E0/1 DP E0/2 RP
+→E0/1がDPである理由はルートポート、指定ポートのどちらにも選出されなかったがSwitch２のF0/2よりブリッジIDが小さいため
+　E0/2がRPである理由はE0/1よりルートブリッジに近いため
+
+
+
